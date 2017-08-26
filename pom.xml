@@ -30,6 +30,18 @@
 		<kotlin.version>1.1.4</kotlin.version>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Finchley.M1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -94,8 +106,6 @@
 	</dependencies>
 
 	<build>
-		<sourceDirectory>springtests/src/main/kotlin</sourceDirectory>
-		<testSourceDirectory>springtests/src/test/kotlin</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

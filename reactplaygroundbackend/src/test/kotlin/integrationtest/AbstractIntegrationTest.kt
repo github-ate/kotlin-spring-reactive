@@ -19,5 +19,4 @@ abstract class AbstractIntegrationTest {
                 .bindToServer().baseUrl("http://localhost:8080")
                 .build()
     }
-
 }
