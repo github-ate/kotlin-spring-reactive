@@ -22,7 +22,7 @@ class CustomerUnitTest {
     lateinit var customerController: CustomerController
 
     @Test
-    fun testFindAll() {
+    fun `Test find all customers`() {
         val customer = Customer("Test1", "Test1")
         val customer2 = Customer("Test2", "Test2")
         Mockito.doReturn(Flux.just(customer, customer2)).`when`(customerRepository).findAll()
